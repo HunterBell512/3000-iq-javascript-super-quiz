@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url("../fonts/Fira\ Code\ Bold\ Nerd\ Font\ Complete\ Mono.ttf");
+}
+
+* {
+    font-family: "Fira Code";
+}
+
+form {
+    margin: 0 auto;
+}
+
+input {
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+button,
+a {
+    background-color: rgb(31, 0, 56);
+    color: white;
+    font-size: 22px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover,
+a:hover {
+    background-color: rgba(31, 0, 56, 0.75);
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hud p {
+    margin-right: 30px;
+}
+
+.hud p,
+.timer {
+    font-size: 32px;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 70%;
+    margin: 10px auto;
+}
+
+.quiz-info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    text-align: center;
+    max-width: 100%;
+}
+
+.quiz-info h1 {
+    font-size: 40px;
+    margin: 0;
+    /* border: black 1px solid; */
+}
+
+.quiz-info p {
+    font-size: 26px;
+    /* border: black 1px solid; */
+}
+
+.quiz-info button {
+    margin-bottom: 10px;
+    max-width: fit-content;
+    margin: 0 auto;
+    /* border: black 1px solid; */
+}
+/* END QUIZ-INFO STYLES */
+
+.quiz-questions {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.quiz-questions button {
+    text-align: left;
+    margin: 5px 0;
+    max-width: fit-content;
+}
+
+.message {
+    text-align: left;
+    font-size: 30px;
+    color: #888888;
+    border-top-color: #888888;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+@media screen and (max-width: 575px) {
+    .quiz-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    form {
+        margin: 0 0 0 -10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    input {
+        max-width: 100%;
+        margin: 10px auto;
+        border: red 1px solid;
+    }
+
+    .hud p,
+    .timer {
+        font-size: 20px;
+    }
+
+    .quiz-info h1 {
+        font-size: 24px;
+    }
+
+    .quiz-info p {
+        font-size: 18px;
+    }
+
+    .quiz-questions button {
+        font-size: 16px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+}

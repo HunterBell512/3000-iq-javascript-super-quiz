@@ -1,0 +1,29 @@
+nav {
+    margin: 0 auto;
+}
+
+img {
+    width: 10.5vw;
+    margin: 0 auto 0.3vw auto;
+    transform: rotate(-10deg);
+    animation: crownRock 1.5s ease infinite;
+}
+
+.score {
+    background-color: rgb(31, 0, 56);
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 30%;
+    margin: 15px auto;
+}
+
+.top-score {
+    margin-bottom: 100px
+}
+
+@keyframes crownRock {
+    50% {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
+}

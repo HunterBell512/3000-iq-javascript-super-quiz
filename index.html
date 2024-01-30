@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Super Quiz</title>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+
+    <body>
+        <div class="hud">
+            <a href="./scores.html">View Highscores</a>
+            <p>Time: <span id="timer" class="timer"">0</span></p>
+        </div>
+
+        <div id="quiz-container" class="quiz-container">
+            <h1 id="quiz-prompt">2000 IQ Javascript Super Quiz</h1>
+            <div class="quiz-info">
+                <p id="intro-text">
+                    Hello and welcome, contestant, to Hunter Bell's
+                    2000 IQ Javascript Super Quiz. I had to make this in about
+                    3 hours against my will in a basement with no food or water (please send help).
+                    Step right up to your mouse and challenge these oh-so-difficult questions about
+                    Javascript fundamentals. Be warned though, you only have 75 seconds to
+                    answer all the questions. Good luck!
+                </p>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+            <div id="quiz-questions" class="quiz-questions"></div>
+            <p id="show-correct"></p>
+        </div>
+    </body>
+    <script src="./assets/js/main.js"></script>
+</html>
